@@ -1,0 +1,32 @@
+{
+    "name": "abdullatif/filament-image-kit",
+    "description": "Complete image management for Filament: thumbnails, blur, cropping, watermark, optimization, CDN, and more",
+    "type": "filament-plugin",
+    "license": "MIT",
+    "version": "1.0.0",
+    "require": {
+        "php": "^8.1",
+        "filament/filament": "^3.0|^4.0",
+        "intervention/image": "^2.7|^3.0",
+        "spatie/laravel-package-tools": "^1.16",
+        "spatie/image-optimizer": "^1.7",
+        "ext-exif": "*"
+    },
+    "suggest": {
+        "ext-imagick": "For better image processing quality",
+        "aws/aws-sdk-php": "For S3/CDN support"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "Abdullatif\\FilamentImageKit\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Abdullatif\\FilamentImageKit\\FilamentImageKitServiceProvider"
+            ]
+        }
+    }
+}

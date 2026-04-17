@@ -1,0 +1,9 @@
+* text=auto
+
+# Exclude dev files from distribution
+/.github export-ignore
+/tests export-ignore
+/.gitattributes export-ignore
+/.gitignore export-ignore
+/phpunit.xml export-ignore
+/phpstan.neon export-ignore
